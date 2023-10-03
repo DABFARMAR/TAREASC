@@ -6,7 +6,7 @@ int main(){
 
     struct product{
         char code[10];
-        char description[50];
+        char description[100];
         float price;
     }product1 = {"98234523","Collar",22.35},product2={"12345678","Comida",10.26};
     
