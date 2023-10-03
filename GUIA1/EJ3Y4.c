@@ -13,8 +13,18 @@ int main(){
     printf("\nTercer lado: ");
     scanf("%d",&c);
 
-    int s = (a+b+c)/2;
 
+
+    
+    //Ejercicio 3
+    //Desigualdad triangular
+    if(a < b + c && b < a + c && c < a + b){
+        printf("No es un triangulo.");
+        return 0;
+
+    }
+    
+    
     if(a==b && a==c){
         printf("Equilatero");
 
@@ -27,7 +37,10 @@ int main(){
     };
 
 
-    printf("\nEl area es: %f",sqrt(s*(s-a)*(s-b)*(s-c)));
+    //Ejercicio 4
+    int s = (a+b+c)/2;
+    printf("\nEl area es: %f\n",sqrt(s*(s-a)*(s-b)*(s-c)));
+
     system("pause");
     return 0;
 }

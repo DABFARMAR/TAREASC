@@ -13,14 +13,16 @@ int main(){
     scanf("%f",&nota3);
 
     media = (nota1*0.4)+(nota2*0.3)+(nota3*0.3);
-    printf("El resultado es: %.2f",media);
-    /*if(((nota1*0.4)+(nota2*0.3)+(nota3*0.3))>=3.95){
-        
 
+    if(media < 3.95){
+        printf("Reprobado");
+    } else if( media >= 4.94){
+        printf("Aprobado");
 
-
-    };*/
-
+    } else {
+        printf("Examen");
+    }
+    
 
     system("pause");
     return 0;
