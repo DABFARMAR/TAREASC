@@ -1,29 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
+
 int main(){
-    char cadena[50];
+    char word[] = "asddsa";
+    int tmp = strlen(word) - 1;
 
-
-
-    printf("Cadena: ");
-    scanf("%s",&cadena);
-
-    printf("Llegar %d\n",strlen(cadena)/2 - 0.5);
-
-    /*if(strlen(cadena)%2 != 0){
-        for(int i=0; i>;++){
-
-
-
+    for(int i=0;i< strlen(word) / 2 ; i++){
+        
+        if(word[i] == word[tmp]){
+            tmp--;
+        } else {
+            printf("No es palindromo");
+            return 0;
         }
 
+    };
 
-    };*/
-
-
-
-    system("pause");
+    printf("Es palindromo");
     return 0;
+
 }

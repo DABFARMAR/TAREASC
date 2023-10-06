@@ -19,9 +19,5 @@ int* quicksort(int* firstElement, int large){
 int main(){
 
 
-
-
-
-
     return 0;
 }
