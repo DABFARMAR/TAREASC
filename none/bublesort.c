@@ -5,7 +5,6 @@
 void MostrarArreglo(int* list,int tamanho){
    for(int j = 0; j<tamanho;j++){
     printf("%d\t",list[j]);
-
    }
    printf("\n");
    
@@ -20,7 +19,7 @@ int main(){
 
     MostrarArreglo(list,cantidad);
 
-    for(int j = cantidad -1 ; j>= 0; j--){
+    for(int j = cantidad - 1 ; j>= 0; j--){
         for(int i = 0; j >= i ;i++){
             if(list[i]>list[i+1]){
                 tmp = list[i+1];
